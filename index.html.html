@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxe &amp; Apex Business Empire</title>
+<style>
+  :root{
+    --royal:#1D4ED8; --navy:#0B1E3F; --ink:#101828;
+    --white:#FFFFFF; --off:#F6F8FC; --gold:#C9A227;
+    --silver:#C8CDD6; --amber:#F59E0B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Georgia,'Times New Roman',serif;}
+  body{color:var(--ink);background:var(--white);line-height:1.6;}
+  a{text-decoration:none;color:inherit;}
+  .sans{font-family:Arial,Helvetica,sans-serif;}
+
+  /* TOP BAR */
+  .topbar{background:var(--navy);color:#fff;font-size:13px;padding:8px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:Arial,sans-serif;}
+  .topbar a{color:var(--gold);}
+
+  /* HEADER */
+  header{background:#fff;border-bottom:1px solid var(--silver);padding:18px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  .logo{display:flex;align-items:center;gap:12px;}
+  .crest{width:46px;height:46px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--royal);font-weight:bold;font-size:18px;}
+  .brand h1{font-size:20px;color:var(--navy);letter-spacing:1px;}
+  .brand span{font-size:10px;letter-spacing:3px;color:var(--silver);font-family:Arial,sans-serif;}
+  nav a{margin:0 10px;font-family:Arial,sans-serif;font-size:14px;color:var(--ink);}
+  nav a:hover{color:var(--royal);}
+
+  /* HERO */
+  .hero{background:linear-gradient(120deg,var(--navy),var(--royal));color:#fff;padding:70px 20px;text-align:center;}
+  .hero h2{font-size:40px;margin-bottom:8px;}
+  .hero .flourish{width:90px;height:3px;background:var(--gold);margin:14px auto;}
+  .hero p{font-family:Arial,sans-serif;font-size:16px;opacity:.9;margin-bottom:24px;}
+  .btn{display:inline-block;padding:12px 26px;border-radius:6px;font-family:Arial,sans-serif;font-size:14px;font-weight:bold;margin:6px;}
+  .btn-gold{background:var(--gold);color:#fff;}
+  .btn-amber{background:var(--amber);color:#fff;}
+  .btn-outline{border:2px solid #fff;color:#fff;}
+
+  /* TRUST BAR */
+  .trust{background:var(--royal);color:#fff;display:flex;justify-content:center;flex-wrap:wrap;gap:30px;padding:16px;font-family:Arial,sans-serif;font-size:14px;}
+
+  /* SECTIONS */
+  section{padding:50px 20px;max-width:1100px;margin:0 auto;}
+  .sec-title{text-align:center;color:var(--navy);font-size:28px;margin-bottom:30px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+  .card{background:#fff;border:1px solid var(--silver);border-radius:10px;padding:18px;text-align:center;transition:.2s;}
+  .card:hover{box-shadow:0 6px 20px rgba(11,30,63,.12);transform:translateY(-3px);}
+  .card.feature{border:2px solid var(--gold);}
+  .card .cat-icon{font-size:34px;}
+  .card h3{color:var(--navy);margin:10px 0 4px;font-size:18px;}
+  .card .price{color:var(--royal);font-family:Arial,sans-serif;font-weight:bold;margin:6px 0;}
+  .card img{width:100%;height:150px;object-fit:cover;border-radius:6px;background:var(--off);}
+
+  /* CARS STRIP */
+  .cars{background:var(--navy);color:#fff;text-align:center;padding:50px 20px;}
+  .cars h2{font-size:28px;margin-bottom:10px;}
+
+  /* POLICY */
+  .alt{background:var(--off);}
+  .policy{max-width:800px;}
+  .policy h2{color:var(--navy);margin-bottom:6px;}
+  .policy em{color:var(--gold);font-size:15px;display:block;margin-bottom:16px;}
+  .policy h3{color:var(--royal);margin:18px 0 6px;font-size:17px;}
+  .policy ul{padding-left:20px;}
+
+  /* FOOTER */
+  footer{background:var(--navy);color:#fff;padding:40px 20px;font-family:Arial,sans-serif;font-size:14px;}
+  .footcols{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;}
+  footer h4{color:var(--gold);margin-bottom:10px;}
+  footer a{display:block;color:#dbe2ef;margin:4px 0;}
+  .copy{text-align:center;margin-top:26px;color:var(--silver);font-size:12px;}
+
+  /* WHATSAPP FLOAT */
+  .wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;font-family:Arial,sans-serif;font-weight:bold;box-shadow:0 4px 14px rgba(0,0,0,.2);z-index:99;}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>📍 Westlands, Nairobi</span>
+  <span><a href="https://wa.me/254793397813">WhatsApp Us: 0793 397 813</a> &nbsp;|&nbsp; KES</span>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <div class="crest">L&amp;A</div>
+    <div class="brand">
+      <h1>LUXE &amp; APEX</h1>
+      <span>BUSINESS EMPIRE</span>
+    </div>
+  </div>
+  <nav class="sans">
+    <a href="#watches">Watches</a>
+    <a href="#shoes">Shoes</a>
+    <a href="#bedding">Bedding</a>
+    <a href="#kitchenware">Kitchenware</a>
+    <a href="#household">Household</a>
+    <a href="#cars">Cars</a>
+    <a href="#policies">Policies</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>Everything Luxe. All in One Place.</h2>
+  <div class="flourish"></div>
+  <p class="sans">Premium watches, shoes &amp; more — delivered across Kenya.</p>
+  <a href="#products" class="btn btn-gold">Shop Now</a>
+  <a href="#cars" class="btn btn-outline">Explore Cars</a>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <span>💳 M-Pesa Accepted</span>
+  <span>🚚 Nationwide Delivery</span>
+  <span>💬 WhatsApp Ordering</span>
+  <span>🔒 Secure Checkout</span>
+</div>
+
+<!-- CATEGORIES -->
+<section>
+  <h2 class="sec-title">Shop by Category</h2>
+  <div class="grid">
+    <a href="#watches"><div class="card feature"><div class="cat-icon">⌚</div><h3>Watches</h3></div></a>
+    <a href="#shoes"><div class="card feature"><div class="cat-icon">👞</div><h3>Shoes</h3></div></a>
+    <a href="#bedding"><div class="card"><div class="cat-icon">🛏️</div><h3>Bedding</h3></div></a>
+    <a href="#kitchenware"><div class="card"><div class="cat-icon">🍴</div><h3>Kitchenware</h3></div></a>
+    <a href="#household"><div class="card"><div class="cat-icon">🏠</div><h3>Household</h3></div></a>
+    <a href="#cars"><div class="card"><div class="cat-icon">🚗</div><h3>Cars</h3></div></a>
+  </div>
+</section>
+
+<!-- PRODUCTS (auto-filled from the list at the bottom) -->
+<section id="products">
+  <h2 class="sec-title">Featured Products</h2>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<!-- CARS STRIP -->
+<div class="cars" id="cars">
+  <h2>Luxury Cars — Enquire &amp; Book a Viewing</h2>
+  <p class="sans">All vehicles sold after inspection. Enquiries handled personally via WhatsApp.</p>
+  <br>
+  <a href="https://wa.me/254793397813?text=Hello%20Luxe%20%26%20Apex%2C%20I%27d%20like%20to%20book%20a%20car%20viewing." class="btn btn-gold">Book a Viewing on WhatsApp</a>
+</div>
+
+<!-- POLICIES -->
+<section class="policy alt" id="policies">
+  <h2>Refund Policy</h2>
+  <em>Luxury You Deserve. Service You Trust.</em>
+  <p>At Luxe &amp; Apex Business Empire, your satisfaction is our priority. If something isn't right with your order, we're here to make it right.</p>
+  <h3>Eligibility for a Refund</h3>
+  <ul>
+    <li>Request a refund within 7 days of receiving your item.</li>
+    <li>Item must be unused, in original condition and packaging with tags.</li>
+    <li>Proof of purchase (order number or M-Pesa confirmation) required.</li>
+    <li>Faulty or damaged items must be reported within 48 hours of delivery.</li>
+  </ul>
+  <h3>Non-Refundable Items</h3>
+  <ul>
+    <li>Cars — all vehicle sales are final after inspection.</li>
+    <li>Items damaged through misuse or returned without original packaging.</li>
+    <li>Hygiene-sensitive goods once opened, unless faulty.</li>
+  </ul>
+  <h3>How Refunds Are Processed</h3>
+  <ul>
+    <li>Issued via M-Pesa or original payment method.</li>
+    <li>Processed within 3–5 business days of approval.</li>
+    <li>Store credit available as an alternative.</li>
+    <li>Delivery fees non-refundable unless our error or faulty item.</li>
+  </ul>
+  <h3>How to Request</h3>
+  <p>WhatsApp us on <strong>0793 397 813</strong> with your order number and reason.</p>
+
+  <br><br>
+
+  <h2>Exchange Policy</h2>
+  <em>Luxury You Deserve. Service You Trust.</em>
+  <p>Prefer a different size, colour, or item? We're happy to arrange an exchange.</p>
+  <h3>Eligibility for an Exchange</h3>
+  <ul>
+    <li>Request within 7 days of receiving your item.</li>
+    <li>Item must be unused, in original condition and packaging with tags.</li>
+    <li>Proof of purchase required.</li>
+    <li>Faulty items reported within 48 hours get a priority exchange.</li>
+  </ul>
+  <h3>Items That Cannot Be Exchanged</h3>
+  <ul>
+    <li>Cars — all vehicle sales are final after inspection.</li>
+    <li>Items damaged through misuse or without original packaging.</li>
+    <li>Hygiene-sensitive goods once opened, unless faulty.</li>
+  </ul>
+  <h3>How Exchanges Work</h3>
+  <ul>
+    <li>Replacement dispatched once your item is received and approved.</li>
+    <li>Price differences settled via M-Pesa or store credit.</li>
+    <li>Delivery fees may apply except for our error or faulty items.</li>
+    <li>Out-of-stock items: alternative, refund, or store credit offered.</li>
+  </ul>
+  <h3>How to Request</h3>
+  <p>WhatsApp us on <strong>0793 397 813</strong> with your order number and the item you'd like instead.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footcols">
+    <div>
+      <h4>Luxe &amp; Apex</h4>
+      <p>Luxury You Deserve.<br>Service You Trust.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="#watches">Watches</a>
+      <a href="#shoes">Shoes</a>
+      <a href="#cars">Cars</a>
+    </div>
+    <div>
+      <h4>Customer Care</h4>
+      <a href="#policies">Refund Policy</a>
+      <a href="#policies">Exchange Policy</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="https://wa.me/254793397813">WhatsApp: 0793 397 813</a>
+      <a href="#">Westlands, Nairobi</a>
+      <a href="#">luxeandapexbusinessempire.co.ke</a>
+    </div>
+  </div>
+  <div class="copy">© 2026 Luxe &amp; Apex Business Empire. All rights reserved.</div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa" href="https://wa.me/254793397813?text=Hello%20Luxe%20%26%20Apex%2C%20I%27d%20like%20to%20order.">💬 Order on WhatsApp</a>
+
+<!-- ============================================================
+     👇  EDIT YOUR PRODUCTS HERE  👇
+     Copy a block, change the details, add as many as you like.
+     category options: Watches, Shoes, Bedding, Kitchenware, Household
+     ============================================================ -->
+<script>
+const WHATSAPP = "254793397813";
+
+const products = [
+  { name:"Classic Gold Wristwatch", category:"Watches", price:"KES 8,500", feature:true,  img:"" },
+  { name:"Leather Oxford Shoes",    category:"Shoes",    price:"KES 6,000", feature:true,  img:"" },
+  { name:"Luxury Cotton Duvet Set", category:"Bedding",  price:"KES 4,500", feature:false, img:"" },
+  { name:"Non-Stick Cookware Set",  category:"Kitchenware", price:"KES 5,200", feature:false, img:"" }
+];
+
+// --- builds the product cards automatically ---
+const grid = document.getElementById("productGrid");
+products.forEach(p => {
+  const msg = encodeURIComponent("Hello Luxe & Apex, I'd like to order: " + p.name + " (" + p.price + ")");
+  grid.innerHTML += `
+    <div class="card ${p.feature ? 'feature' : ''}">
+      ${p.img ? `<img src="${p.img}" alt="${p.name}">` : `<div style="height:150px;background:var(--off);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--silver)">Product Photo</div>`}
+      <h3>${p.name}</h3>
+      <div class="sans" style="font-size:12px;color:var(--silver)">${p.category}</div>
+      <div class="price">${p.price}</div>
+      <a href="https://wa.me/${WHATSAPP}?text=${msg}" class="btn btn-amber">Order on WhatsApp</a>
+    </div>`;
+});
+</script>
+
+</body>
+</html>
